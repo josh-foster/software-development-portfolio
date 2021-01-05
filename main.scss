@@ -121,13 +121,13 @@ header{
     gap: 1vw;
     
 
-    div{
+    a{
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: whitesmoke;
         border-radius: 50px;
-        opacity: 0.75;
+        opacity: 0.8;
         transition: .6s ease;
 
         &:hover{

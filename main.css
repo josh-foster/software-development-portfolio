@@ -98,16 +98,16 @@ header nav a i:hover {
   grid-template-rows: repeat(4, 1fr);
   gap: 1vw;
 }
-.development-projects div {
+.development-projects a {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
   border-radius: 50px;
-  opacity: 0.75;
+  opacity: 0.8;
   transition: 0.6s ease;
 }
-.development-projects div:hover {
+.development-projects a:hover {
   opacity: 1;
 }
 .development-projects .project1 {
