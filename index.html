@@ -1,31 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/jpg" href="img\nology-josh-foster-photo .jpg"/>
-        <title>Josh Foster's Portfolio Landing Page</title>
-    </head>
-    <body>
-    <section>   
-        <div class="button">
-            <a href="main.html">ENTER</a>
-        </div>
-        <footer>
-            <p>I'm Josh,</p>
-            <p>Welcome to my portfolio.</p>
-            <button>
-            <a href="main.html">Take a look -></a>
-            </button>
-        </footer>
-        <div class="video-large">
-            <video poster="./img/black-bg-poster.jpg" autoplay loop muted src="img\background-6.mp4"></video>
-        </div>
-        <div class="video-small">
-            <video poster="./img/black-bg-poster.jpg" autoplay loop muted src="img\website-background-for-smaller-screen.mp4"></video>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd4e124605.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="img\nology-josh-foster-photo .jpg"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Josh Foster's Portfolio</title>
+</head>
+<body>   
+
+    <header>
+        <nav>
+            <!-- <a href="index.html">Home</a> -->
+           
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <!-- <a href="#">Contact</a> -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <a class="socials" href="https://www.linkedin.com/in/josh-foster-a66094142/"><i class="fab fa-linkedin"></i></a>
+            <a class="socials" href="https://github.com/josh-foster" target="_blank"><i class="fab fa-github"></i></a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <article>
+            <h2>Josh Foster</h2>
+            <p>I’m a  <span> First-Clas Math’s graduate</span>   who enjoys being creative and learning new ways to solve challenging problems. I have found that <span> Software Development</span>  is a great way to express both of these qualities, and subsequently embarking on a 12-week intensive course <a target="_blank" href="https://nology.io/">at _nology</a> has been one of the best decisions I've made. I have a background in <span>Graphic Design</span> and <span>Animation</span>, but am now looking to start my first <span>junior developer role.</span> </p>
+        </article>
+            <img src="img\nology-josh-foster-photo .jpg" alt="">
+        
+        
     </section>
+
+    <section class="client-project">
+        <img src="img\happy-app-pic-for-porfolio-2.jpg" alt="">
+        <article>
+            <h2>CLIENT PROJECT</h2>
+            <p> <span>Real-life</span>  project creating a mobile web app MVP in <span>React</span>. <span>Happy App</span>  is a self-reflection tool helping users to improve their happiness. My contributions, among others, consisted of: <span>designing wireframes</span> and presenting these to the client; implementing a <span>Firebase</span>  database to build a feature allowing users to save tasks for themselves to complete; <span>project managing</span>  the  final weekly sprint and presenting my teams final product to the client.  </p>
+            <div>
+                <a target="_blank" href="https://happy-app-86830.web.app/setscores">Website</a>
+                <a href="https://github.com/nology-tech/happy-app">GitHub</a>
+            </div>
+            
+        </article>
+        
+        
+        
+    </section>
+
+
+    <section  class="development-projects">
+        <a class="project1"></a>
+        <a class="project2"></a>
+        <a class="project3"></a>
+        <a class="project4"></a>
+        <a class="project5"></a>
+        <a class="project6"></a>
+        <a class="project7"></a>
+    </section>
+
+    <!-- <section class="contact">
+        
+            
+            <form action="">
+                <h2>CONTACT ME</h2>
+                <fieldset>
+                    <input type="text" name=" name" aria-label="name" placeholder="Name..." required>
+                    <input type="email" name=" email" aria-label="email" placeholder="Email address..." required>
+                <textarea placeholder="Message..." name="message" id="message" cols="30" rows="10"></textarea>
+                </fieldset>
+                <input class="submit" type="button" value="Submit">
+            </form>
+        
+    </section> -->
+
+    <footer  >
+    <div class="links">
+        <a href="https://www.linkedin.com/in/josh-foster-a66094142/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/josh-foster" target="_blank"><i class="fab fa-github"></i></a>
+    </div> 
+    <a href="">BACK TO TOP</a>
+    </footer>
+    
 </body>
 </html>
