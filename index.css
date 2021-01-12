@@ -120,6 +120,35 @@ header nav a i:hover {
   color: black;
 }
 
+.tech-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border-radius: 50px;
+  width: 90%;
+  height: 75px;
+  background-color: #e6e6e6;
+}
+
+.tech-skills p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+}
+
+.tech-skills h3 {
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+}
+
 .client-project {
   background-color: #e6e6e6;
   border-radius: 300px;
@@ -144,7 +173,7 @@ header nav a i:hover {
 .client-project article {
   margin-right: 10%;
   margin-left: 5%;
-  margin-bottom: 1.5%;
+  margin-bottom: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +189,12 @@ header nav a i:hover {
           align-items: center;
 }
 
+.client-project article h3 {
+  display: none;
+}
+
 .client-project article h2 {
+  margin-top: 6.5%;
   font-family: 'Bebas Neue';
   font-size: 3vw;
   padding: 0;
@@ -211,6 +245,110 @@ header nav a i:hover {
 }
 
 .client-project article div a:hover {
+  background-color: black;
+  color: white;
+}
+
+.punk-api {
+  background-color: #e6e6e6;
+  border-radius: 300px;
+  width: 90%;
+  margin: 10% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.punk-api img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 31%;
+}
+
+.punk-api article {
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-bottom: 1.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.punk-api article h3 {
+  display: none;
+}
+
+.punk-api article h2 {
+  margin-top: 6.5%;
+  font-family: 'Bebas Neue';
+  font-size: 3vw;
+  padding: 0;
+}
+
+.punk-api article p {
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1vw;
+  line-height: 2;
+}
+
+.punk-api article p span {
+  font-weight: bold;
+}
+
+.punk-api article p a {
+  color: black;
+}
+
+.punk-api article div {
+  height: 100px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.punk-api article div a {
+  width: 30%;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+  border: 2px solid black;
+  padding: 1.5%;
+  border-radius: 50px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.punk-api article div a:hover {
   background-color: black;
   color: white;
 }
@@ -510,11 +648,15 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
   .about {
     width: 95vw;
-    margin: 10% auto 0 2%;
+    margin: 10% auto 10% 2%;
   }
   .about img:hover {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
+  }
+  .about article {
+    margin-right: 2%;
+    margin-top: 1%;
   }
   .about article h2 {
     display: none;
@@ -523,6 +665,12 @@ footer a:hover {
     line-height: 1.3;
     font-size: 1.75vw;
   }
+  .tech-skills p {
+    font-size: 0.9rem;
+  }
+  .tech-skills h3 {
+    font-size: 1.5rem;
+  }
   .client-project {
     width: 95vw;
     margin: 10% auto 0 2%;
@@ -530,10 +678,10 @@ footer a:hover {
   .client-project img {
     -webkit-clip-path: circle(50% at 50% 50%);
             clip-path: circle(50% at 50% 50%);
-    width: 100%;
+    width: 33%;
   }
   .client-project article {
-    margin-top: 2.5%;
+    margin-top: 3%;
   }
   .client-project article h2 {
     display: none;
@@ -541,12 +689,51 @@ footer a:hover {
   .client-project article p {
     line-height: 1.3;
     font-size: 1.5vw;
+    margin-bottom: 0;
   }
-  .client-project a {
+  .client-project article div {
+    margin-top: 5%;
+    margin-bottom: 0;
+    height: 20%;
+    padding: 0;
+  }
+  .client-project article div a {
     font-size: 0.8rem;
-    margin-top: 0%;
     border: 2px solid black;
     padding: 0;
+    margin: 0;
+  }
+  .punk-api {
+    width: 95vw;
+    margin: 10% auto 10% 2%;
+  }
+  .punk-api img {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+    width: 33%;
+  }
+  .punk-api article {
+    margin-top: 5%;
+  }
+  .punk-api article h2 {
+    display: none;
+  }
+  .punk-api article p {
+    line-height: 1.3;
+    font-size: 1.5vw;
+    margin-bottom: 0;
+  }
+  .punk-api article div {
+    margin-top: 5%;
+    margin-bottom: 0;
+    height: 20%;
+    padding: 0;
+  }
+  .punk-api article div a {
+    font-size: 0.8rem;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
   }
   .development-projects {
     width: 90vw;
@@ -624,10 +811,25 @@ footer a:hover {
   body .about img {
     width: 100%;
   }
+  body .tech-skills {
+    height: 70vh;
+    width: 40%;
+    border-radius: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10% 0;
+  }
+  body .tech-skills h3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   body .client-project {
-    margin: 20%  auto;
+    margin: 30%  auto;
     width: 80%;
-    height: 270vw;
+    height: 300vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -637,9 +839,17 @@ footer a:hover {
   body .client-project article {
     width: 80%;
   }
+  body .client-project article h3 {
+    font-size: 1.5rem;
+    font-family: "Bebas Neue";
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 0;
+    display: block;
+  }
   body .client-project article p {
     margin-left: 6%;
-    margin-top: 50%;
+    margin-top: 20%;
     line-height: 2;
     font-size: 4vw;
   }
@@ -652,6 +862,41 @@ footer a:hover {
   body .client-project div a {
     margin-bottom: 10%;
     margin-bottom: 10%;
+  }
+  body .punk-api {
+    margin: 20%  auto;
+    width: 80%;
+    height: 300vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  body .punk-api article {
+    margin-top: 20%;
+    margin-bottom: 40%;
+    width: 80%;
+  }
+  body .punk-api article h3 {
+    margin-top: 0;
+    font-family: "Bebas Neue";
+    font-size: 1.5rem;
+  }
+  body .punk-api article p {
+    margin-right: 6%;
+    margin-bottom: 20%;
+    line-height: 2;
+    font-size: 4vw;
+  }
+  body .punk-api img {
+    width: 100%;
+  }
+  body .punk-api div {
+    width: 100%;
+  }
+  body .punk-api div a {
+    margin-bottom: 5%;
   }
   body .development-projects {
     width: 90vw;
