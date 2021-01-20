@@ -781,6 +781,7 @@ footer a:hover {
 @media only screen and (max-width: 430px) {
   body header {
     margin-top: 3vh;
+    display: none;
   }
   body header nav a {
     font-size: 4vw;
@@ -835,6 +836,12 @@ footer a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .client-project article {
     width: 80%;
@@ -842,7 +849,7 @@ footer a:hover {
   body .client-project article h3 {
     font-size: 1.5rem;
     font-family: "Bebas Neue";
-    text-align: center;
+    margin-left: 5%;
     margin-top: 50%;
     margin-bottom: 0;
     display: block;

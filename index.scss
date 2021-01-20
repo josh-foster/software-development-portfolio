@@ -693,7 +693,7 @@ footer{
 
         header{
             margin-top: 3vh;
-            
+            display: none;
 
             nav{
                 
@@ -750,6 +750,8 @@ footer{
             height:300vw;
             flex-direction: column;
             flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
 
             article{ 
                 width: 80%;
@@ -758,10 +760,11 @@ footer{
                 h3{
                     font-size: 1.5rem;
                     font-family: $font-one;
-                    text-align: center;
+                   margin-left: 5%;
                     margin-top:50%;
                     margin-bottom: 0;
                     display: block;
+                   
                     
                 }
         
