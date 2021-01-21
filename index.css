@@ -353,83 +353,31 @@ header nav a i:hover {
   color: white;
 }
 
-.development-projects {
-  width: 95vw;
-  height: 150vw;
+.minesweeper {
+  background-color: #e6e6e6;
+  border-radius: 300px;
+  width: 90%;
   margin: 10% auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-  gap: 1vw;
-}
-
-.development-projects a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: whitesmoke;
-  border-radius: 50px;
-  opacity: 0.8;
-  -webkit-transition: .6s ease;
-  transition: .6s ease;
 }
 
-.development-projects a:hover {
-  opacity: 1;
+.minesweeper img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 31%;
 }
 
-.development-projects .project1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.development-projects .project1 h2 {
-  font-family: 'Bebas Neue';
-  font-size: 7rem;
-  padding: 0;
-  margin: 7.5%;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-}
-
-.development-projects .project2 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-}
-
-.development-projects .project3 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.development-projects .project4 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
+.minesweeper article {
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-bottom: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,60 +385,6 @@ header nav a i:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.development-projects .project4 h2 {
-  font-family: 'Bebas Neue';
-  font-size: 2rem;
-}
-
-.development-projects .project5 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.development-projects .project6 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  grid-row: 3/5;
-}
-
-.development-projects .project7 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-}
-
-.contact {
-  width: 60vw;
-  margin: 10vw auto;
-}
-
-.contact form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: whitesmoke;
-  border-radius: 50px;
-  -webkit-transition: .6s ease;
-  transition: .6s ease;
-  display: flex;
-  flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -499,95 +393,62 @@ header nav a i:hover {
           align-items: center;
 }
 
-.contact form h2 {
+.minesweeper article h3 {
+  display: none;
+}
+
+.minesweeper article h2 {
+  margin-top: 6.5%;
   font-family: 'Bebas Neue';
   font-size: 3vw;
-  margin: 2.5vw 0;
+  padding: 0;
 }
 
-.contact form fieldset {
-  border: none;
+.minesweeper article p {
   margin: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1vw;
+  line-height: 2;
+}
+
+.minesweeper article p span {
+  font-weight: bold;
+}
+
+.minesweeper article div {
+  height: 100px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 100%;
-  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact form fieldset input {
-  border: none;
-  border-radius: 20px;
-  height: 3vw;
-  padding-left: 2vw;
-  margin: 1vw 0;
-  font-size: 1vw;
+.minesweeper article div a {
+  width: 30%;
+  text-align: center;
+  color: black;
+  text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+  border: 2px solid black;
+  padding: 1.5%;
+  border-radius: 50px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
-.contact form fieldset input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.contact form fieldset input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-.contact form fieldset input:focus::-ms-input-placeholder {
-  color: transparent;
-}
-
-.contact form fieldset input:focus::placeholder {
-  color: transparent;
-}
-
-.contact form fieldset textarea {
-  height: 30vh;
-  max-width: 90%;
-  border: none;
-  border-radius: 20px;
-  padding: 5%;
-  font-size: 1vw;
-  resize: none;
-}
-
-.contact form fieldset textarea:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.contact form fieldset textarea:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-.contact form fieldset textarea:focus::-ms-input-placeholder {
-  color: transparent;
-}
-
-.contact form fieldset textarea:focus::placeholder {
-  color: transparent;
-}
-
-.contact form .submit {
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  height: 5vw;
-  width: 10vw;
-  margin: 2.5vw auto;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1vw;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.contact form .submit:hover {
+.minesweeper article div a:hover {
   background-color: black;
   color: white;
 }
@@ -735,46 +596,37 @@ footer a:hover {
     padding: 0;
     margin: 0;
   }
-  .development-projects {
-    width: 90vw;
+  .minesweeper {
+    width: 95vw;
+    margin: 10% auto 0 2%;
   }
-  .contact {
-    width: 85vw;
-    height: 70vh;
+  .minesweeper img {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+    width: 33%;
   }
-  .contact form {
-    margin: auto;
-    height: 70vh;
+  .minesweeper article {
+    margin-top: 3%;
+  }
+  .minesweeper article h2 {
+    display: none;
+  }
+  .minesweeper article p {
+    line-height: 1.3;
+    font-size: 1.5vw;
+    margin-bottom: 0;
+  }
+  .minesweeper article div {
+    margin-top: 5%;
+    margin-bottom: 0;
+    height: 20%;
     padding: 0;
-    width: 90%;
-    margin-bottom: 5vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
-  .contact form fieldset {
-    margin: auto;
-    height: 50vh;
-  }
-  .contact form fieldset input {
-    height: 7vw;
-    font-size: 2vw;
-  }
-  .contact form fieldset textarea {
-    height: 20vw;
-    font-size: 2vw;
-  }
-  .contact form .submit {
-    height: 7vw;
-    width: 15vw;
-    font-size: 2vw;
+  .minesweeper article div a {
+    font-size: 0.8rem;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -904,6 +756,49 @@ footer a:hover {
   }
   body .punk-api div a {
     margin-bottom: 5%;
+  }
+  body .minesweeper {
+    margin: 30%  auto;
+    width: 80%;
+    height: 200vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .minesweeper article {
+    width: 80%;
+  }
+  body .minesweeper article h3 {
+    font-size: 1.5rem;
+    font-family: "Bebas Neue";
+    margin-left: 5%;
+    margin-top: 50%;
+    margin-bottom: 0;
+    display: block;
+  }
+  body .minesweeper article p {
+    margin-left: 6%;
+    margin-top: 20%;
+    line-height: 2;
+    font-size: 4vw;
+  }
+  body .minesweeper img {
+    width: 100%;
+  }
+  body .minesweeper div {
+    width: 100%;
+  }
+  body .minesweeper div a {
+    margin-bottom: 10%;
+    margin-bottom: 10%;
   }
   body .development-projects {
     width: 90vw;
