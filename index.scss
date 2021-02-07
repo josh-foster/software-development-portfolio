@@ -2,10 +2,12 @@ $main-color: rgb(230, 230, 230);
 $text-color: rgb(14, 14, 14);
 $hover-color:red;
 $root-font-size:1rem;
-$font-one: 'Bebas Neue';
+$font-one: 'Bebas Neue', cursive;
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: black;
@@ -83,7 +85,8 @@ header{
         align-items: center; 
 
         h2{
-            font-family: 'Bebas Neue';
+            font-family: 'Bebas Neue', cursive;
+            font-weight: normal;
             font-size: 3vw ;
             padding: 0;
 
@@ -127,7 +130,7 @@ header{
     h3{
         font-family:$font-one ;
         font-size:2rem; 
-        
+        font-weight: normal;
     }
 }
 .client-project{
@@ -163,6 +166,7 @@ header{
         h2{
             margin-top: 6.5%;
             font-family: 'Bebas Neue';
+            font-weight: normal;
             font-size: 3vw ;
             padding: 0;
 
@@ -248,6 +252,7 @@ header{
             font-family: 'Bebas Neue';
             font-size: 3vw ;
             padding: 0;
+            font-weight: normal;
 
         }
 
@@ -337,6 +342,7 @@ header{
             font-family: 'Bebas Neue';
             font-size: 3vw ;
             padding: 0;
+            font-weight: normal;
 
         }
 
@@ -356,7 +362,6 @@ header{
            
         }
         div{
-            
             height: 100px;
             width: 50%;
             display: flex;
@@ -420,7 +425,7 @@ header{
             font-family: 'Bebas Neue';
             font-size: 3vw ;
             padding: 0;
-
+            font-weight: normal;
         }
 
         p{

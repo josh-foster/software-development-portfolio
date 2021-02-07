@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   background-image: url("./img/background-image-main.jpg");
@@ -96,7 +100,8 @@ header nav a i:hover {
 }
 
 .about article h2 {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
   font-size: 3vw;
   padding: 0;
 }
@@ -145,8 +150,9 @@ header nav a i:hover {
 }
 
 .tech-skills h3 {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", cursive;
   font-size: 2rem;
+  font-weight: normal;
 }
 
 .client-project {
@@ -196,6 +202,7 @@ header nav a i:hover {
 .client-project article h2 {
   margin-top: 6.5%;
   font-family: 'Bebas Neue';
+  font-weight: normal;
   font-size: 3vw;
   padding: 0;
 }
@@ -298,6 +305,7 @@ header nav a i:hover {
   font-family: 'Bebas Neue';
   font-size: 3vw;
   padding: 0;
+  font-weight: normal;
 }
 
 .punk-api article p {
@@ -402,6 +410,7 @@ header nav a i:hover {
   font-family: 'Bebas Neue';
   font-size: 3vw;
   padding: 0;
+  font-weight: normal;
 }
 
 .minesweeper article p {
@@ -502,6 +511,7 @@ header nav a i:hover {
   font-family: 'Bebas Neue';
   font-size: 3vw;
   padding: 0;
+  font-weight: normal;
 }
 
 .movie-api article p {
@@ -836,7 +846,7 @@ footer a:hover {
   }
   body .client-project article h3 {
     font-size: 1.5rem;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", cursive;
     margin-left: 5%;
     margin-top: 50%;
     margin-bottom: 0;
@@ -875,7 +885,7 @@ footer a:hover {
   }
   body .punk-api article h3 {
     margin-top: 0;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", cursive;
     font-size: 1.5rem;
   }
   body .punk-api article p {
@@ -914,7 +924,7 @@ footer a:hover {
   }
   body .minesweeper article h3 {
     font-size: 1.5rem;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", cursive;
     margin-left: 5%;
     margin-top: 50%;
     margin-bottom: 0;
@@ -953,7 +963,7 @@ footer a:hover {
   }
   body .movie-api article h3 {
     margin-top: 0;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", cursive;
     font-size: 1.5rem;
   }
   body .movie-api article p {
